@@ -93,7 +93,7 @@ function showError(errorText) {
     out vec4 outputColor;
   
     void main() {
-      outputColor = vec4(0.294, 1, 0.51, 1.0);
+      outputColor = vec4(0.294, 1.0, 0.51, 1.0);
     }`;
   
     const fragmentShader = gl.createShader(gl.FRAGMENT_SHADER);
