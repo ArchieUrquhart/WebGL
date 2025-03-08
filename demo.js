@@ -9,9 +9,6 @@ function showError(errorText) {
   
 
 
-
-
-
   function helloTriangle() {
     //
     // Setup Step 1: Get the WebGL rendering context for our HTML canvas rendering area
@@ -96,7 +93,7 @@ function showError(errorText) {
     out vec4 outputColor;
   
     void main() {
-      outputColor = vec4(0.294, 0.0, 0.51, 1.0);
+      outputColor = vec4(0.294, 1, 0.51, 1.0);
     }`;
   
     const fragmentShader = gl.createShader(gl.FRAGMENT_SHADER);
@@ -143,7 +140,7 @@ function showError(errorText) {
     // Output merger (how to apply an updated pixel to the output image)
     canvas.width = canvas.clientWidth;
     canvas.height = canvas.clientHeight;
-    gl.clearColor(0.5, 0.08, 0.08, 1.0);
+    gl.clearColor(0.08, 0.08, 0.08, 1.0);
     gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
   
     // Rasterizer (which output pixels are covered by a triangle?)
