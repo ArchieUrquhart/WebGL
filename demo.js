@@ -143,7 +143,7 @@ function showError(errorText) {
     // Output merger (how to apply an updated pixel to the output image)
     canvas.width = canvas.clientWidth;
     canvas.height = canvas.clientHeight;
-    gl.clearColor(0.08, 0.08, 0.08, 1.0);
+    gl.clearColor(0.5, 0.08, 0.08, 1.0);
     gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
   
     // Rasterizer (which output pixels are covered by a triangle?)
